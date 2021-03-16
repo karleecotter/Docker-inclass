@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dockerinclass:
+    image: ${DOCKER_REGISTRY-}dockerinclass
+    build:
+      context: .
+      dockerfile: Dockerinclass/Dockerfile
